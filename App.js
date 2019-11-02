@@ -42,7 +42,7 @@ export default class App extends Component {
         <Text
           style={{
             marginBottom: 30,
-            color: "pink",
+            color: "blue",
             fontSize: 40
           }}
         >
