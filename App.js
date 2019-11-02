@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Icon from "react-native-vector-icons/Ionicons";
 import {
   Platform,
   StyleSheet,
@@ -42,7 +43,7 @@ export default class App extends Component {
         <Text
           style={{
             marginBottom: 30,
-            color: "blue",
+            color: "tomato",
             fontSize: 40
           }}
         >
@@ -68,18 +69,16 @@ export default class App extends Component {
             onChangeText={text => this.setState({ password: text })}
             value={this.state.password}
           />
-          <Text
-            onPress={() => {
-              this.setState({ status: !this.state.status });
-            }}
-          >
-            Show/Hide
-          </Text>
         </View>
+        <Icon
+            name="eye"
+            color="#ccc"
+            size={25}
+          />
         <View style={{ width: "100%", marginTop: 20 }}>
           <Button
             title="Submit"
-            color="pink"
+            color="tomato"
             onPress={() => {
               alert(
                 "Username: " +
